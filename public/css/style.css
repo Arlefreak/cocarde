@@ -336,6 +336,7 @@ html {
   background-image: url("../img/Textura.svg");
   background-position: 0 0;
   font-family: 'Underground', monaco, monospace;
+  font-variant: small-caps;
 }
 body {
   margin: 0;
