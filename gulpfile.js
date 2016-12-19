@@ -25,10 +25,10 @@ const jpegtran    = require('imagemin-jpegtran');
 const svgo        = require('imagemin-svgo');
 
 const DEBUG = process.env.NODE_ENV === 'production' ? false : true;
-const DEST_PATH = 'public/';
+const DEST_PATH = 'docs/';
 const DEST_PATH_LIB = DEST_PATH + 'lib/';
 
-// grab libraries files from bower_components, minify and push in /public
+// grab libraries files from bower_components, minify and push in /docs
 gulp.task('bower', ()=> {
     var filterJs = gulpFilter('**/*.js', {
         restore: true
@@ -48,7 +48,7 @@ gulp.task('bower', ()=> {
         includeDev: true
     }))
 
-    // grab vendor js files from bower_components, minify and push in /public
+    // grab vendor js files from bower_components, minify and push in /docs
     .pipe(filterJs)
     .pipe(gulpif(!DEBUG, uglify()))
     .pipe(rename({
@@ -57,7 +57,7 @@ gulp.task('bower', ()=> {
     .pipe(gulp.dest(DEST_PATH_LIB + 'js/'))
     .pipe(filterJs.restore)
 
-    // grab vendor css files from bower_components, minify and push in /public
+    // grab vendor css files from bower_components, minify and push in /docs
     .pipe(filterCss)
     .pipe(gulp.dest(DEST_PATH_LIB + 'css/'))
     .pipe(gulpif(!DEBUG, cleanCSS({compatibility: 'ie8'})))
@@ -67,12 +67,12 @@ gulp.task('bower', ()=> {
     .pipe(gulp.dest(DEST_PATH_LIB + 'css/'))
     .pipe(filterCss.restore)
 
-    // grab vendor font files from bower_components and push in /public
+    // grab vendor font files from bower_components and push in /docs
     .pipe(filterFont)
     .pipe(flatten())
     .pipe(gulp.dest(DEST_PATH_LIB + 'fonts/'))
 
-    // grab vendor font files from bower_components and push in /public
+    // grab vendor font files from bower_components and push in /docs
     .pipe(filterImg)
     .pipe(flatten())
     .pipe(gulp.dest(DEST_PATH_LIB + 'img/'));
@@ -135,7 +135,7 @@ gulp.task('html', ()=> {
 
 gulp.task('files', ()=> {
     gulp.src(['./src/**.*', '!./src/**.*.html', '!./src/**.*js', '!./src/img/'])
-    .pipe(gulp.dest('./public/'));
+    .pipe(gulp.dest(DEST_PATH));
 });
 
 gulp.task('react', ()=> {
@@ -144,7 +144,7 @@ gulp.task('react', ()=> {
 
 gulp.task('connect', ()=> {
     connect.server({
-        root: 'public',
+        root: DEST_PATH,
         livereload: true,
     });
 });
