@@ -9,10 +9,22 @@ html
     padding 0
     color $white
     background $red
-    background-image url('../img/Textura.svg')
-    background-position 0 0
+    /* background-image url('../img/Textura.svg') */
+    /* background-position 0 0 */
     font-family $font
     font-variant small-caps
+    &:before
+        content ' '
+        display block
+        position absolute
+        left 0
+        top 0
+        width 100%
+        height 100%
+        z-index -1
+        opacity 0.75
+        background-image url('../img/Textura.svg')
+        background-size 150px 150px
 body
     margin 0
     padding 0
