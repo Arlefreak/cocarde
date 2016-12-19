@@ -328,25 +328,29 @@ td {
 a img {
   border: none;
 }
-html,
-body {
+html {
   margin: 0;
   padding: 0;
   color: #fff;
   background: #370e1b;
-  background-image: url("../img/Textura.png");
-/* background-size 465px 465px */
+  background-image: url("../img/Textura.svg");
   background-position: 0 0;
   font-family: 'Underground', monaco, monospace;
+}
+body {
+  margin: 0;
+  padding: 0;
+  color: #fff;
+  background: transparent;
 }
 header img {
   max-width: 100%;
   height: auto;
   display: block;
-  margin: auto;
+  margin: 50px auto 100px auto;
 }
 h2 {
-  margin: 0 auto 20px auto;
+  margin: 0 auto 100px auto;
   text-align: center;
   font-size: 2em;
   font-size: 2.4em;
@@ -374,5 +378,9 @@ article {
 }
 footer {
   text-align: center;
-  margin: 50px auto 50px auto;
+  margin: 100px auto 50px auto;
+}
+footer a {
+  display: inline-block;
+  margin: 0 100px 0 100px;
 }
