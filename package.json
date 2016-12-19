@@ -4,7 +4,7 @@
   "description": "Html5, Stylus, Bower & Gulp Boilerplate generator",
   "main": "index.js",
   "scripts": {
-    "deploy-demo": "git push origin :gh-pages && git subtree push --prefix public origin gh-pages",
+    "deploy": "git push origin :gh-pages && git subtree push --prefix public origin gh-pages",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
