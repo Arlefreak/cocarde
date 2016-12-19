@@ -1,0 +1,66 @@
+{
+  "name": "bp.afk",
+  "version": "0.0.1",
+  "description": "Html5, Stylus, Bower & Gulp Boilerplate generator",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Arlefreak/bp.afk.git"
+  },
+  "keywords": [
+    "Html5",
+    "stylus",
+    "bower",
+    "gulp",
+    "boilerplate"
+  ],
+  "author": "Arlefreak",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Arlefreak/bp.afk/issues"
+  },
+  "homepage": "https://github.com/Arlefreak/bp.afk#readme",
+  "dependencies": {
+    "body-parser": "^1.14.1",
+    "dotenv": "^2.0.0",
+    "errorhandler": "^1.4.2",
+    "express": "^4.13.3",
+    "method-override": "^2.3.5"
+  },
+  "devDependencies": {
+    "babel-eslint": "^7.1.0",
+    "babel-preset-es2015": "^6.18.0",
+    "babel-preset-react": "^6.16.0",
+    "babel-preset-stage-2": "^6.18.0",
+    "babelify": "^7.2.0",
+    "browserify": "^13.0.0",
+    "eslint": "^3.10.0",
+    "eslint-plugin-react": "^6.6.0",
+    "estraverse-fb": "^1.3.1",
+    "gulp": "^3.9.0",
+    "gulp-clean-css": "^2.3.2",
+    "gulp-concat": "^2.6.0",
+    "gulp-connect": "^5.0.0",
+    "gulp-eslint": "^3.0.1",
+    "gulp-filter": "^4.0.0",
+    "gulp-flatten": "^0.3.1",
+    "gulp-if": "^2.0.0",
+    "gulp-imagemin": "^3.1.1",
+    "gulp-rename": "^1.2.2",
+    "gulp-sourcemaps": "^2.2.0",
+    "gulp-stylus": "^2.1.0",
+    "gulp-uglify": "^2.0.0",
+    "imagemin-gifsicle": "^5.1.0",
+    "imagemin-jpegtran": "^5.0.2",
+    "imagemin-pngquant": "^5.0.0",
+    "imagemin-svgo": "^5.2.0",
+    "main-bower-files": "^2.9.0",
+    "nib": "^1.1.0",
+    "run-sequence": "^1.1.5",
+    "vinyl-buffer": "^1.0.0",
+    "vinyl-source-stream": "^1.1.0"
+  }
+}
