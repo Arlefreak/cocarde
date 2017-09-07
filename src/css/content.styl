@@ -13,14 +13,19 @@
         left 0%
         transform translate(0,0)
         margin auto
+
+main
+    font-size 1.0em
+    @media screen and (max-width: 768px)
+        font-size 0.8em
 h2
-    margin 0 auto 100px auto
+    margin 0 auto 80px auto
     text-align center
     font-size 2.4em
     line-height 1.5em
     letter-spacing 0.2em
     @media screen and (max-width: 768px)
-        font-size 2.0em
+        margin 0 auto 50px auto
 p
     margin 10px auto 10px auto
     font-weight 100
@@ -29,13 +34,15 @@ p
     line-height 1.5em
     text-align center
     hyphens auto
+    @media screen and (max-width: 768px)
+        margin 5px auto 5px auto
 a
     color $white
     text-decoration none
     letter-spacing 0.2em
     line-height 1.5em
     font-size 1.0em
+
 article
     width 80%
     margin auto
-
