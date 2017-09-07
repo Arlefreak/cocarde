@@ -469,24 +469,24 @@ footer {
     margin: 50px auto 0 auto;
   }
 }
-footer a {
+footer p {
   display: inline-block;
 }
-footer a:first-child {
+footer p:first-child {
   margin: 10px 10% 10px 0;
 }
-footer a:last-child {
+footer p:last-child {
   margin: 10px 0 10px 10%;
 }
 @media screen and (max-width: 980px) {
-  footer a {
+  footer p {
     width: 100%;
     display: block;
   }
-  footer a:first-child {
+  footer p:first-child {
     margin: 10px auto 10px auto;
   }
-  footer a:last-child {
+  footer p:last-child {
     margin: 10px auto 10px auto;
   }
 }
