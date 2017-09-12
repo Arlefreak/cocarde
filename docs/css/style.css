@@ -235,7 +235,7 @@ textarea {
 }
 @font-face {
   font-family: 'Underground';
-  src: url("https://s3-us-west-2.amazonaws.com/genericafk/P22UndergroundPro-Book.otf");
+  src: url("https://s3-us-west-2.amazonaws.com/generic.afk/P22UndergroundPro-Book.otf");
 }
 html,
 body,
@@ -342,19 +342,11 @@ body {
   display: block;
   font-family: 'Underground', monaco, monospace;
   font-variant: small-caps;
-  background: #370e1b;
+  background: #2b0018;
   color: #fff;
 }
 body {
   background: transparent;
-}
-main {
-  font-size: 1em;
-}
-@media screen and (max-width: 600px) {
-  main {
-    font-size: 0.8em;
-  }
 }
 .bg {
   display: block;
